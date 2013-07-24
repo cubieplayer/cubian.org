@@ -1,13 +1,9 @@
 markdown: rdiscount 
 permalink: /:year/:month/:day/:title 
-title: Tao
-url: http://ztpala.com
-subscribe: http://ztpala.com/feed.xml
+title: Cubian
+url: http://cubian.org
+subscribe: http://cubian.org/feed.xml
 exclude: [ README.md, newpost.rb ]
-domain: ztpala.com
-author: Tao Zhang
-email: ztpala+blog@gmail.com
-twitterID: ztpala
-googleAnalyticsID: UA-5531632-1
-disqusShortname: ztpala
-timezone: Asia/Shanghai
+domain: cubian.org
+disqusShortname: cubian
+pygments: true
