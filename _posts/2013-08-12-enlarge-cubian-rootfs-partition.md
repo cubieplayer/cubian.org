@@ -7,7 +7,7 @@ tags:
 The rootfs partition on Cubian is 1GB. You may wants to enlarge the partition 
 for more space. [Here](http://askubuntu.com/questions/24027/how-to-resize-a-ext4-root-partition-at-runtime) 
 is a small tutorial.  
-For convenience, I have created a tool based on the tutorial named `cubian-resizefs`
+For convenience, I created a tool based on the tutorial named `cubian-resizefs`
 
 # Installation
 
