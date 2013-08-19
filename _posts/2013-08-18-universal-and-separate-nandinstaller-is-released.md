@@ -6,7 +6,7 @@ tags:
 ---
 I created a separate package of **nandinstaller** which supports A10 and A20 regardless of the kernel version.
 To install it, follow the [tutorial](http://cubian.org/2013/08/09/cubian-update-is-available/) adds the GPG key and configure the apt source properly.
-> apt-get install cubian-nandinstall
+> apt-get update && apt-get install cubian-nandinstall
 
 The usage is pretty simple
 > cubian-nandinstall

@@ -10,10 +10,13 @@ To autoload these modules,uncomment the associate line in **/etc/modules**.
 Aslo, the Ralink wireless driver is compiled but not tested, the driver name is `rt5370sta`.
 
 You need to update your [cubian-update](http://cubian.org/2013/08/09/cubian-update-is-available/) to latest version(1.0-3). To update, run
-> apt-get install cubian-update
+> apt-get update && apt-get install cubian-update
 
 To update the kernel, simply run
 > cubian-update
+
+If you have problems, please enable verbose mode to get more details
+> cubian-update -v
 
 To downgrade the kernel after updated, run
 > cubian-update --revert-firmware
