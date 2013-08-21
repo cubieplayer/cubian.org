@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Enlarge Cubian rootfs partition"
-categories: 
+categories: News
 tags:
 ---
 The rootfs partition on Cubian is 1GB. You may wants to enlarge the partition 
