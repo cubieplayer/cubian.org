@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cubian for cubieboard1 r4 released"
-categories: News
+categories: [news]
 tags:
 ---
 r4 has a few changes:

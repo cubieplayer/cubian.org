@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Kernel update to 3.4.43 on A20"
-categories: News
+categories: [news]
 tags:
 ---
 Cubian for cubieboard2(A20) has update kernel from 3.3.0 to 3.4.43.

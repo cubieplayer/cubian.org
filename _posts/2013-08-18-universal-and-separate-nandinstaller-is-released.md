@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Universal and separate nandinstaller is released"
-categories: News
+categories: [news]
 tags:
 ---
 I created a separate package of **nandinstaller** which supports A10 and A20 regardless of the kernel version.

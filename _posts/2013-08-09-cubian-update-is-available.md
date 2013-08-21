@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cubian update is available"
-categories: News
+categories: [news]
 tags:
 ---
 cubian-update is tool to keep your kernel and modules updated.

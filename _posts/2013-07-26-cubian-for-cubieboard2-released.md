@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cubian for cubieboard2 released"
-categories: News 
+categories: [news] 
 tags:
 ---
 For those first heard of this distribution. Please take a look at our [github Repository](https://github.com/cubieplayer/Cubian). We use Linux Kernel 3.3.0 for cubieboard2 instead of 3.4.43 on cubieboard1.
