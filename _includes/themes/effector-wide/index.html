@@ -1,5 +1,6 @@
 <div class="wrapper">
-<ul class="postsList">
+<div class="pull-left" style="width:120px;">askdjf</div>
+<ul class="postsList pull-left">
 {% assign indexMax=10 %}
 {% for post in site.categories.news limit: indexMax %}
 <li><span>{{ post.date | date: "%b %d, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>

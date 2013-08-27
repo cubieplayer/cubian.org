@@ -9,18 +9,19 @@
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Noto Sans'), local('NotoSans'), url(http://themes.googleusercontent.com/static/fonts/notosans/v1/LeFlHvsZjXu2c3ZRgBq9nD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+  src: local('Noto Sans'), local('NotoSans'), url(/assets/css/webfonts/noto_sans.woff) format('woff');
 }
 @font-face {
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/notosans/v1/PIbvSEyHEdL91QLOQRnZ13hCUOGz7vYGh680lGh-uXM.woff) format('woff');
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(/assets/css/webfonts/noto_sans_bold.woff) format('woff');
 }
 html, body {
     background-color: #FFFFFF;
 }
 footer, header, nav {
+	clear:both;
     display: block;
 }
 .nav>a {
@@ -383,6 +384,7 @@ text-shadow: 0 1px 0 #fff;
 
 .postsList {
     margin: 0px 0px 10px 0px;
+	width:100%;
 }
 .postsList li{
   list-style: none;
