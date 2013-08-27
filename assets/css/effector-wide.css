@@ -5,21 +5,35 @@
  * http://ztpala.com
  * effecotr-wide is the 99% same as effector, only it's better for displaying photos.
  */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'), local('NotoSans'), url(http://themes.googleusercontent.com/static/fonts/notosans/v1/LeFlHvsZjXu2c3ZRgBq9nD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/notosans/v1/PIbvSEyHEdL91QLOQRnZ13hCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
 html, body {
     background-color: #FFFFFF;
 }
 footer, header, nav {
     display: block;
 }
-footer {
-    margin-top: -40px;
-}
 .nav>a {
      margin:  0px 20px 0px 0px;
+	 font-size: 1.2em;
 }
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%
+}
+body{
+	font-family:Ubuntu,'Noto Sans',"Helvetica Neue",Helvetica,Arial,freesans,clean,sans-serif;
+	-webkit-font-smoothing:antialiased;
 }
 a:focus {
     outline: thin dotted;
@@ -356,10 +370,14 @@ text-shadow: 0 1px 0 #fff;
     font-size: 40px;
     font-weight: bold;
     color:  #333;
+    text-align: left;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:clip;
 }
 .wrapper  {
     background-color:  #fff;
-    margin:  0px 0px 50px 0px;
+    margin:  0px 0px 30px 0px;
     padding:  0px 0px;
 }
 
@@ -389,13 +407,16 @@ text-shadow: 0 1px 0 #fff;
     width:  auto;
     padding: 20px;
 }
-.sitename {
+h1.sitename {
     font-size: 24px;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:clip;
 }
 
 .wrapper  {
     background-color:  #fff;
-    margin:  10px 0px 20px 0px;
+    margin:  0px 0px 20px 0px;
 }
