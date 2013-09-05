@@ -4,24 +4,26 @@ title: "Enlarge Cubian rootfs partition"
 categories: [news]
 tags:
 ---
-The rootfs partition on Cubian is 1GB. You may wants to enlarge the partition 
+The rootfs partition on Cubian is 1GB minus 100MB. You may wants to enlarge the partition 
 for more space. [Here](http://askubuntu.com/questions/24027/how-to-resize-a-ext4-root-partition-at-runtime) 
 is a small tutorial.  
 For convenience, I created a tool based on the tutorial named `cubian-resizefs`
 
 # Installation
 
-First, [Import GPG key and add apt source](http://cubian.org/2013/08/09/cubian-update-is-available)
+First, [Import GPG key and add apt source](http://cubian.org/2013/08/09/cubian-update-is-available). 
 
 Then,  
 > apt-get update && apt-get install cubian-resizefs
 
 # Usage
 
-> cubian-resizefs END_SECTOR_POS
+> cubian-resizefs device [ratio]
 
-Replace **END_SECTOR_POS** to a number, if **END_SECTOR_POS** is not provided. 
-It will occupy the whole SD-card.
+**Ratio** is between 1 and 100, if **ratio** is not provided. It will occupy the whole SD-card.
+For example, if ratio is 50, it means use the half space of your SD-card. If it's 75, it means use the 3/4 of total space, and so on.  
+
+> cubian-resizefs /dev/mmcblk0
 
 # Notice
 
