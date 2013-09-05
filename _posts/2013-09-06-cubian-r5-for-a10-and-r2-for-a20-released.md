@@ -11,7 +11,7 @@ This release fixed several bugs and one security issue.
 * Fix a [hang-up issue](https://github.com/cubieplayer/Cubian/issues/36) on start up.
 * Regenerate SSH keys on first start up
 * Nandinstall folder is removed. Please use the [separate nand installer](http://cubian.org/2013/08/18/universal-and-separate-nandinstaller-is-released) instead
-* Intergrates [cubian-update](http://localhost:4000/2013/08/09/cubian-update-is-available)
+* Intergrates [cubian-update](http://cubian.org/2013/08/09/cubian-update-is-available)
 
 # Tips
 
