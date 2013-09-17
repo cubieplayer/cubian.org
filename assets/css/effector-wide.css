@@ -403,6 +403,10 @@ text-shadow: 0 1px 0 #fff;
   font-size: 14px;
 }
 
+.textdel{
+    text-decoration: line-through;
+}
+
 @media only screen and (max-width:768px) {
     .container {
     width:  auto;
