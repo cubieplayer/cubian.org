@@ -12,7 +12,7 @@ Please make sure the rootfs has enough available space, over 1GB is recommended.
 # For short
 > apt-get update
 > cubian-update  
-> apt-get install xserver-xorg-core xinit xserver-xorg-video-sunximali sunxi-disp-test lxde-core  
+> apt-get install xserver-xorg-core xinit xserver-xorg-video-sunximali sunxi-disp-test lxde
 > usermod -a -G video cubie
 
 If everything goes well, You'll get LXDE running with opengles accelerated
