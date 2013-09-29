@@ -10,9 +10,9 @@ Cubian doesn't provide a desktop environment by default, but you can easily inst
 Please make sure the rootfs has enough available space, over 1GB is recommended. You can use [cubian-resizefs](http://cn.cubian.org/2013/08/12/enlarge-cubian-rootfs-partition/) to resize your rootfs partition without losing any data.
 
 # For short
-> apt-get update
+> apt-get update  
 > cubian-update  
-> apt-get install xserver-xorg-core xinit xserver-xorg-video-sunximali sunxi-disp-test lxde
+> apt-get install xserver-xorg-core xinit xserver-xorg-video-sunximali sunxi-disp-test lxde  
 > usermod -a -G video cubie
 
 If everything goes well, You'll get LXDE running with opengles accelerated
