@@ -31,7 +31,7 @@ If everything goes well, You'll get LXDE running with opengles accelerated
 	
 	> xinit /usr/bin/sunxi_disp_test -- :0
 	
-	If this shows a colourful triangle in a grey background measuring 480x480 then all is fine!. You can safely proceed to next step.
+	If this shows a colourful triangle in a grey background measuring 480x480 then all is fine! You can safely proceed to next step.
 1.	Install lxde
 1.	Add user cubie to **video** group, so it can access the mali device
 1.	Run the test program again.Open a lxtermial from the start menu
