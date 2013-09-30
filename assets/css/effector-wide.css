@@ -417,6 +417,14 @@ text-shadow: 0 1px 0 #fff;
     text-decoration: line-through;
 }
 
+#donate_amount{
+	width:auto;
+	height:auto;
+	padding:0;
+	margin:-2px 0 0 0;
+	font-size:14px;
+}
+
 @media only screen and (max-width:768px) {
     .container {
     width:  auto;
