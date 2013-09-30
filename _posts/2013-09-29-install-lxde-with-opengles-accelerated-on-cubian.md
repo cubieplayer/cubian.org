@@ -36,4 +36,4 @@ If everything goes well, You'll get LXDE running with opengles accelerated
 1.	Add user cubie to **video** group, so it can access the mali device
 1.	Run the test program again.Open a lxtermial from the start menu
 
-	> xinit /usr/bin/sunxi_disp_test
+	> sunxi_disp_test
