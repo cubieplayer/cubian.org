@@ -36,4 +36,4 @@ If you use Cubian for first time. It's important to take just **ONE** minute to 
 
 * Desktop start screen
 
-![Desktop screenshot](http://cubieplayer.github.io/static_files/images/cubian-desktop-scrot-small.jpg)
+![Desktop screenshot](http://cubieplayer.github.io/static_files/images/cubian-desktop-scrot-small.png)
