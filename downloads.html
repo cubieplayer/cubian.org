@@ -38,11 +38,11 @@ permalink: /downloads/
 	<hr/>
 	<h1><a href="http://cubieplayer.github.io/Cubian/dist/">Historical versions</a></h1>
 	<h1><a href="http://cubieplayer.github.io/Cubian/tools/">Tools</a></h1>
-	<h1>Source</h1>
+	<h1 id="Source">Source</h1>
 	<ul>
-		<li><a href="https://github.com/mmplayer/linux-sunxi/tree/dev/sunxi-3.4">Kernel</a></li>
-		<li><a href="https://github.com/mmplayer/u-boot-sunxi">U-Boot</a></li>
-		<li><a href="https://github.com/cubieplayer/Toolchain">Cross-compiler(Toolchain)</a></li>
+		<li><a href="https://github.com/mmplayer/linux-sunxi/tree/dev/sunxi-3.4">Kernel</a><p style="margin-bottom:0;font-weight:bold;">Kernel Config</p><ul><li>For A10 devices eg. Cubieboard1. Use <a href="https://github.com/mmplayer/sunxi-kernel-config/blob/master/config-cubian-base-sun4i">config-cubian-base-sun4i</a></li><li>For A20 devices eg. Cubieboard2,Cubietruck. Use <a href="https://github.com/mmplayer/sunxi-kernel-config/blob/master/config-cubian-base-sun7i-3.4">config-cubian-base-sun7i-3.4</a></li></ul><p style="margin-bottom:0;font-weight:bold;">Build Guide</p><ul><li>Config<br/><code>make ARCH=arm menuconfig</code></li><li>Make<br/><code>make -j4 ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- uImage modules</code></li><li>Install<br/><code>make STRIP=arm-none-linux-gnueabi-strip INSTALL_MOD_PATH=ROOTFS_PATH ARCH=arm INSTALL_MOD_STRIP=1 modules_install</code></li></ul></li>
+		<li><a href="https://github.com/mmplayer/u-boot-sunxi">U-Boot</a><p style="margin-bottom:0;font-weight:bold;">Branch info</p><ul><li>sunxi - A10,A20 MMC bootloader</li><li>sunxi-nand - A10 NAND bootloader</li><li>dev/a20-nand-ext4 - A20 NAND bootloader</li></ul><p style="margin-bottom:0;font-weight:bold;">Build Guide</p><ul><li>From sunxi branch <br/><code>make Cubieboard|Cubieboard2|Cubietruck CROSS_COMPILE=arm-none-linux-gnueabi-</code><br/>will build u-boot for MMC A10 and A20 boards. eg. Cubieboard 1,2 and Cubietruck</li><li>From sunxi-nand branch<br/><code>make Cubieboard CROSS_COMPILE=arm-none-linux-gnueabi-</code><br/>will build u-boot for NAND on A10. eg. Cubieboard1</li><li>From dev/a20-nand-ext4 branch<br/><code>make sun7i CROSS_COMPILE=arm-none-linux-gnueabi-</code><br/>will build u-boot for NAND on A20. eg. Cubieboard2,Cubietruck</li></ul></li>
+		<li><a href="https://github.com/cubieplayer/Toolchain">Cross-compiler(Toolchain)</a><p style="margin-bottom:0;font-weight:bold;">Branch info</p><ul><li>arm-2010.09, codesourcery's toolchain <span style="font-weight:bold;">(Recommended)</span></li><li>arm-linaro-2013.06, linaro's toolchain <span style="font-weight:bold;">(Deprecated)</span></li></ul></li>
 	</ul>
 	<h1>Special Thanks</h1>
 	<ul>
