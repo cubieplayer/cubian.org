@@ -4,7 +4,7 @@ title: "Cubian update is available"
 categories: [news]
 tags:
 ---
-cubian-update is tool to keep your kernel and modules updated.
+cubian-update is a tool to keep your kernel and modules updated.
 
 Step 1. Add GPG key (root privilege is needed)
 > wget -O - http://packages.cubian.org/cubian.gpg.key | apt-key add -
