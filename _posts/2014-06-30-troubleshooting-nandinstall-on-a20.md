@@ -15,6 +15,6 @@ To solve the problem is pretty easy. You just need to use livesuit burn a [lubun
 **Note, everytime your burn an android system to nand, and you want change to linux, you need to perform this step, otherwise the board won't start after running cubian-nandinstall.**
 
 #root setting in uEnv.txt
-Another common pitfall is the root device parameter is not setted correctlly in uEnv.txt. The nand install script will set `root=/dev/nandb` in uEnv.txt, it should be okay with Cubian's kernel. It should be `/dev/nand2` if you use patwood's kernel. The device name is determined by whether you set **CONFIG_SUNXI_NAND_COMPAT_DEV** in kernel config.
+Another common pitfall is the root device parameter is not setted correctlly in uEnv.txt. The nand install script will set `root=/dev/nandb` in uEnv.txt, it's fine with Cubian's kernel. If you are using other kenrel, like patwood's, you should change it to `/dev/nand2`. The device name is determined the kernel config option **CONFIG_SUNXI_NAND_COMPAT_DEV**.
 
 Please let me know, if you still have problems about nand-install.
