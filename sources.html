@@ -4,7 +4,7 @@ title: Cubian Sources
 permalink: /sources/
 ---
 <div class="wrapper">
-	<h1 id="linux">Linux</h1>
+	<h1 id="linux"><a href="https://github.com/mmplayer/linux-sunxi.git">Linux</a></h1>
 	<p> There are two ways to get the source </p>
 	<ol>
 		<li> <code>apt-get install linux-source</code> </li>
@@ -17,7 +17,7 @@ permalink: /sources/
 	<p style="margin-bottom:0;font-weight:bold;">Kernel Config</p>
 	<ul><li>For A10 devices eg. Cubieboard1. Use <a href="https://github.com/mmplayer/sunxi-kernel-config/blob/master/config-cubian-base-sun4i">config-cubian-base-sun4i</a></li><li>For A20 devices eg. Cubieboard2,Cubietruck. Use <a href="https://github.com/mmplayer/sunxi-kernel-config/blob/master/config-cubian-base-sun7i-3.4">config-cubian-base-sun7i-3.4</a></li></ul><p style="margin-bottom:0;font-weight:bold;">Build Guide</p><ul><li>Config<br/><code>make ARCH=arm menuconfig</code></li><li>Make<br/><code>make -j4 ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- uImage modules</code></li><li>Install<br/><code>make STRIP=arm-none-linux-gnueabi-strip INSTALL_MOD_PATH=ROOTFS_PATH ARCH=arm INSTALL_MOD_STRIP=1 modules_install</code></li></ul>
 
-	<h1 id="uboot">U-Boot</h1>
+	<h1 id="uboot"><a href="https://github.com/mmplayer/u-boot-sunxi">U-Boot</a></h1>
 	<p style="margin-bottom:0;font-weight:bold;">Branch info</p>
 	<ul><li>sunxi - A10,A20 MMC bootloader</li><li>sunxi-nand - A10 NAND bootloader with ext4 support</li><li>dev/a20-nand-ext4-v2 - A20 NAND bootloader with ext4 support</li></ul><p style="margin-bottom:0;font-weight:bold;">Build Guide</p><ul><li>From sunxi branch <br/><code>make Cubieboard|Cubieboard2|Cubietruck CROSS_COMPILE=arm-none-linux-gnueabi-</code><br/>will build u-boot for MMC A10 and A20 boards. eg. Cubieboard 1,2 and Cubietruck</li><li>From sunxi-nand branch<br/><code>make Cubieboard CROSS_COMPILE=arm-none-linux-gnueabi-</code><br/>will build u-boot for NAND on A10. eg. Cubieboard1</li><li>From dev/a20-nand-ext4-v2 branch<br/><code>make sun7i CROSS_COMPILE=arm-none-linux-gnueabi-</code><br/>will build u-boot for NAND on A20. eg. Cubieboard2,Cubietruck</li></ul>
 	<p style="margin-bottom:0;font-weight:bold;">Hardware Config (script.bin)</p><ul><li><a href="https://github.com/mmplayer/sunxi-boards/blob/master/sys_config/a10/cubieboard_argon.fex">cubieboard1</a> <span style="font-weight:bold;"></span></li><li><a href="https://github.com/mmplayer/sunxi-boards/blob/master/sys_config/a20/cubieboard2_argon.fex">cubieboard2</a></li><li><a href="https://github.com/mmplayer/sunxi-boards/blob/master/sys_config/a20/cubietruck_argon.fex">cubietruck</a></li></ul>
